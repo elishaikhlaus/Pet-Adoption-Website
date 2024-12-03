@@ -17,6 +17,7 @@ header {
 
 header .logo {
     height: 60px;
+    border-radius: 5px;
 }
 
 nav a {
