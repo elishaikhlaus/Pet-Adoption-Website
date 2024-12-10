@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Animal Shelter</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Animal Shelter Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#adopt">Adopt</a>
+            <a href="#donate">Donate</a>
+            <a href="#volunteer">Volunteer</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
 
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>If you're interested in adopting one of our pets or have any questions, please reach out to us below:</p>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Animal Shelter. Follow us on 
+            <a href="https://instagram.com">Instagram</a> and 
+            <a href="https://facebook.com">Facebook</a>.
+        </p>
+    </footer>
+</body>
+</html>
