@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loved Pets Animal Shelter</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function showPets() {
+            document.getElementById('pets-gallery').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function learnMore(petName) {
+            alert(`Learn more about ${petName}!`);
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,35 +22,36 @@
             <a href="#adopt">Adopt</a>
             <a href="#donate">Donate</a>
             <a href="#volunteer">Volunteer</a>
+            <a href="#about">About Us</a>
         </nav>
     </header>
 
     <div class="hero">
         <h1>Welcome to Our Animal Shelter</h1>
         <h3>Your next furry friend is waiting for you!</h3>
-        <button>Meet Our Pets</button>
+        <button onclick="showPets()">Meet Our Pets</button>
     </div>
 
     <section id="adopt" class="section">
         <h2>Adoptable Pets</h2>
-        <div class="pets">
+        <div class="pets" id="pets-gallery">
             <div class="pet">
                 <img src="rabbit1.jpg" alt="Rabbit" width="100%">
                 <h3>Fluffy</h3>
                 <p>Curious bunny, 1 year old.</p>
-                <button>Learn More</button>
+                <button onclick="learnMore('Fluffy')">Learn More</button>
             </div>
             <div class="pet">
                 <img src="kitten1.jpg" alt="Kitten" width="100%">
                 <h3>Mittens</h3>
                 <p>Playful tabby, 3 months old.</p>
-                <button>Learn More</button>
+                <button onclick="learnMore('Mittens')">Learn More</button>
             </div>
             <div class="pet">
                 <img src="puppy1.jpg" alt="Puppy" width="100%">
                 <h3>Max</h3>
                 <p>Friendly golden retriever, 6 months old.</p>
-                <button>Learn More</button>
+                <button onclick="learnMore('Max')">Learn More</button>
             </div>
         </div>
     </section>
@@ -68,6 +78,13 @@
         <button>Donate Now</button>
     </section>
 
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Welcome to our animal shelter! We are dedicated to rescuing and rehoming animals in need, ensuring they find loving families.</p>
+        <h3>Our Mission</h3>
+        <p>To provide a safe haven for animals, promote adoption, and educate the community about responsible pet ownership.</p>
+    </section>
+
     <footer>
         <p>&copy; 2024 Animal Shelter. Follow us on 
             <a href="https://instagram.com">Instagram</a> and 
@@ -76,4 +93,3 @@
     </footer>
 </body>
 </html>
-
