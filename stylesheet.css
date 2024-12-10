@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #ffb7ce; /* Pink */
+    background-color: #ffb7ce; /* pink */
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,118 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
+}
+
+/* Pet Details Pages */
+.pet-details {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.pet-details img {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pet-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pet-details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.pet-details button {
+    background-color: #cfae92;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pet-details button:hover {
+    background-color: #a9826d;
+}
+
+/* Contact Page */
+.contact {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    background-color: #cfae92;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #a9826d;
+}
+
+/* Footer */
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #cfae92;
+    text-decoration: none;
 }
 
 /* Hero Section */
@@ -57,6 +169,11 @@ nav a {
 
 .hero button:hover {
     background-color: #a9826d;
+}
+
+/* Smooth Scrolling for Links */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Sections */
@@ -92,7 +209,7 @@ nav a {
     background-color: #cfae92;
     border: none;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
@@ -128,22 +245,4 @@ nav a {
     line-height: 1.6;
     margin-bottom: 15px;
     color: #4a4a4a;
-}
-
-/* Footer */
-footer {
-    background-color: #4a4a4a;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-footer a {
-    color: #cfae92;
-    text-decoration: none;
-}
-
-/* Smooth Scrolling for Links */
-html {
-    scroll-behavior: smooth;
 }
